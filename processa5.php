@@ -11,7 +11,9 @@
     $data = isset($_POST['data']) ? $_POST['data'] : "";
     $peso = isset($_POST['peso']) ? $_POST['peso'] : "";   
     $altura = isset($_POST['altura']) ? $_POST['altura'] : "";   
-    $aluno_idaluno = isset($_GET['idaluno']) ? $_GET['idaluno'] : "";   
+    $aluno_idaluno = isset($_GET['idaluno']) ? $_GET['idaluno'] : "";  
+    $idturma = isset($_GET['idturma']) ? $_GET['idturma'] : "";   
+ 
 
 
     if(isset($_POST['processa5'])){$processa5 = $_POST['processa5'];}else if(isset($_GET['processa5'])){$processa5 = $_GET['processa5'];}else{$processa5="";}
@@ -30,7 +32,7 @@
         // var_dump($avaliacao);
         // die();
         $avaliacao->insere();
-        header("location:resultado.php?id=".$id);
+        header("location:resultado.php?id=$id&idturma=$idturma");
 
     }   
 

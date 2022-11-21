@@ -11,6 +11,7 @@
     $idescola = isset($_GET["idescola"]) ? $_GET["idescola"] : 0;
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -94,7 +95,7 @@
         <tr>
             <td><?php echo $linha['nome_turma'];?></td>
             <td>
-                <a href="processa3.php?processa3=Seleciona&idturma=<?php echo $linha['id'];?>">Seleciona</a>
+                <a class="link" href="processa3.php?processa3=Seleciona&idturma=<?php echo $linha['id'];?>">Seleciona</a>
             </td>
             
         </tr>

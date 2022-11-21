@@ -94,7 +94,7 @@
 
 
         <!-- <button name="processa3" id="processa3" value="cadastrar" type="submit">Editar</button> -->
-        <a style="float:right;" class="button" href="processa3.php?processa3=editar&idturma=<?php echo $dados['id'];?>">Editar</a>
+        <a style="float:left;" class="button" href="processa3.php?processa3=editar&idturma=<?php echo $dados['id'];?>">Editar</a>
         <a style="float:right;" class="button" href="processa3.php?processa3=excluir&idturma=<?php echo $dados['id'];?>">Excluir</a>
 
 

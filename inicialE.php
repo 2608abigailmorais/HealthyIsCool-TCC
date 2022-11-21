@@ -10,6 +10,7 @@
     $title = "Inicial | Escola";
 ?>
 
+
 <!DOCTYPE html>
 <html>
 <head>
